@@ -1,0 +1,148 @@
+/* Front-end Mentor Attribute */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* Colors */
+.color-primary { color: hsl(179, 62%, 43%); }
+.color-secondary { color: hsl(71, 73%, 54%); }
+.color-light-gray { color: hsl(204, 43%, 93%); }
+.color-gray { color: hsl(218, 22%, 67%); }
+.color-mute { color:hsla(203, 44%, 93%, 0.432); }
+.bg-color-primary { background-color: hsl(179, 62%, 43%); }
+.bg-color-secondary { background-color: hsl(71, 73%, 54%); }
+.bg-color-tertiary { background-color: hsla(179, 62%, 43%, 0.90); }
+.bg-color-light-gray { background-color: hsl(204, 43%, 93%); }
+.bg-color-gray { background-color: hsl(218, 22%, 67%); }
+
+/* Default Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Karla', sans-serif;
+}
+h1 {
+    margin: 1em 0;
+}
+h2  {
+    margin-bottom: 1em;
+}
+p {
+    margin: 1em 0;
+    line-height: 2em;
+}
+
+/* Utilities */
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.btn {
+    border-radius: 5px;
+}
+.btn > a {
+    display: block;
+    padding: 1rem 0;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Banner Section */
+.banner {
+    padding: 2em 0;
+}
+.banner--description {
+    font-weight: 700;
+}
+
+/* Subscription Section */
+.subscription {
+    padding: 2em 0;
+}
+.price {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    margin: 0;
+}
+.price + p {
+    margin-top: 0.5em;
+}
+.price--number {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-right: 0.25em;
+}
+.sign-up-btn {
+    margin-top: 1.5em;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+    transition: background-color 0.25s;
+}
+.sign-up-btn:hover {
+    background-color: transparent;
+    margin-top: 1.5em;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19);
+}
+
+/* Why-Us Section */
+.why-us {
+    padding: 2em 0;
+}
+.why-us h2 {
+    margin-bottom: 0.75em;
+}
+
+.why-us p {
+    white-space: pre;
+    line-height: 1.5em;
+    color:hsla(203, 44%, 93%, 0.80); 
+}
+
+/* Tablets */
+@media only screen and (min-width: 768px) {
+    :root {
+        font-size: 125%;
+    }
+    .d-flex {
+        display: flex;
+        align-items: center;
+    }
+    .container {
+        width: 80%;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .banner {
+        height: 40vh;
+    }
+    .banner--description + p{
+        width: 850px;
+        max-width: 100%;
+        margin: 0;
+    }
+    .banner h1 {
+        margin: 0.5em 0;
+    }
+    .banner--description {
+        margin: 0;
+    }
+    .information {
+        display: flex;
+        height: 60vh;
+    }
+    .information > div {
+        width: 50%;
+    }
+}
+
+/* Big screens */
+@media only screen and (min-width: 1000px) {
+    :root {
+        font-size: 150%;
+    }
+}
+
