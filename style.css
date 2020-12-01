@@ -1,5 +1,9 @@
 /* Front-end Mentor Attribute */
-.attribution { font-size: 11px; text-align: center; }
+.attribution {
+     position:absolute; font-size: 11px; text-align: center; 
+     left: 50%;
+     transform: translateX(-50%);
+}
 .attribution a { color: hsl(228, 45%, 44%); }
 
 /* Colors */
@@ -21,7 +25,9 @@
     box-sizing: border-box;
 }
 body {
+    background-color: black;
     font-family: 'Karla', sans-serif;
+    background-color:  hsl(177, 49%, 85%); 
 }
 h1 {
     font-size: 2em;
@@ -52,15 +58,28 @@ p {
     text-decoration: none;
 }
 
-/* Banner Section */
+.card-section {
+    margin: 1rem auto 0 auto;
+    width: 90%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Banner */
 .banner {
-    padding: 2em 0;
+    padding: 4em 0;
 }
 .banner--description {
     font-weight: 700;
 }
 
-/* Subscription Section */
+/* Subscription */
 .subscription {
     padding: 2em 0;
 }
@@ -106,19 +125,12 @@ p {
 /* Tablets */
 @media only screen and (min-width: 768px) {
     :root {
-        font-size: 125%;
-    }
-    .d-flex {
-        display: flex;
-        align-items: center;
+        font-size: 100%;    
     }
     .container {
         width: 80%;
         max-width: 1000px;
         margin: 0 auto;
-    }
-    .banner {
-        height: 45vh;
     }
     .banner--description + p{
         width: 850px;
@@ -133,17 +145,19 @@ p {
     }
     .information {
         display: flex;
-        height: 55vh;
     }
     .information > div {
         width: 50%;
     }
-}
-
-/* Big screens */
-@media only screen and (min-width: 1000px) {
-    :root {
-        font-size: 150%;
+    .card-section {
+        max-width: 768px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+    }
+    .attribution {
+        bottom: 0;
     }
 }
-
